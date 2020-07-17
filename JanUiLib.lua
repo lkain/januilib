@@ -1609,7 +1609,7 @@ local UnlockMouse
 function library:Init()
 	
 	self.base = self.base or self:Create("ScreenGui", {
-		Parent = game:GetService"Players".LocalPlayer:WaitForChild"PlayerGui"
+		Parent = game.CoreGui
 	})
 	
 	self.cursor = self.cursor or self:Create("Frame", {
